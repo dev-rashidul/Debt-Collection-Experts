@@ -1,0 +1,113 @@
+/* Base Style CSS Start */
+
+/* Font */
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Thin.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Black.ttf);
+  font-weight: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gilroy";
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #f40025;
+  --secondary: #161c2d;
+  --white: #ffffff;
+  --black: #000000;
+  --gray-400: #5b5e69;
+  --gray-500: #4d4d4d;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section-title h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  color: var(--secondary);
+}
+
+p {
+  font-size: 18px;
+  line-height: 168%;
+  letter-spacing: -0.2px;
+  color: var(--gray-500);
+}
+
+p a {
+  font-weight: 700;
+  text-decoration: underline;
+  color: #f53455;
+}
+
+/* Base Style CSS End */

@@ -127,6 +127,11 @@ p a {
   background: var(--primary);
   padding: 15px;
   border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn a:hover {
+  background: var(--secondary);
 }
 
 /* Base Style CSS End */

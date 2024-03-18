@@ -67,7 +67,7 @@ body {
 }
 
 :root {
-  --primary: #f40025;
+  --primary: #ff0000;
   --secondary: #161c2d;
   --white: #ffffff;
   --black: #000000;
@@ -113,7 +113,8 @@ p {
 p a {
   font-weight: 700;
   text-decoration: underline;
-  color: #f53455;
+  color: #ff0000;
+  opacity: 0.7;
 }
 
 .primary-btn a {
@@ -656,6 +657,10 @@ p a {
 
 /* Review Section CSS Start */
 
+.review-wrapper {
+  background: #f8f8f8;
+}
+
 .review-top {
   max-width: 720px;
   margin: auto;
@@ -709,5 +714,119 @@ p a {
 }
 
 /* Review Section CSS End */
+
+/* Specialise Section CSS Start */
+
+.specialise-top {
+  max-width: 730px;
+  margin: auto;
+  text-align: center;
+}
+
+.specialise-top p {
+  padding-top: 15px;
+  font-weight: 600;
+}
+
+.specialise-cards {
+  max-width: 730px;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.specialise-card img {
+  width: 100%;
+  max-height: 238px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.specialise-card a {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  text-decoration-line: underline;
+  color: var(--primary);
+  margin-top: 30px;
+}
+
+.specialise-card a i {
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+/* Specialise Section CSS End */
+
+/* Work Section CSS Start */
+
+.work-wrapper {
+  background: #f8f8f8;
+}
+
+.work-top {
+  max-width: 725px;
+  margin: auto;
+  text-align: center;
+}
+
+.work-top p {
+  font-weight: 400;
+  color: var(--secondary);
+  padding-top: 15px;
+  opacity: 0.7;
+}
+
+.work-card {
+  margin-top: 40px;
+}
+
+.work-card-img img {
+  width: 100%;
+  max-height: 198px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.step-tag {
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+
+.step-tag span {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: var(--white);
+  background: var(--black);
+  padding: 10px 15px;
+  border-radius: 10px 0 10px 0;
+}
+
+.work-card-content {
+  padding-top: 30px;
+}
+
+.work-card-content h5 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 152%;
+  letter-spacing: -0.5px;
+  color: var(--secondary);
+}
+
+.work-card-content p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 171%;
+  letter-spacing: -0.2px;
+  color: var(--black);
+  opacity: 0.7;
+}
+
+/* Work Section CSS End */
 
 /* Main Part CSS End */

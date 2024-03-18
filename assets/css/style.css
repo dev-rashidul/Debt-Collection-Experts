@@ -97,13 +97,14 @@ img {
 .section-title h2 {
   font-size: 40px;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 130%;
   text-align: center;
   color: var(--secondary);
 }
 
 p {
   font-size: 18px;
+  font-weight: 500;
   line-height: 168%;
   letter-spacing: -0.2px;
   color: var(--gray-500);
@@ -134,6 +135,10 @@ p a {
   background: var(--secondary);
 }
 
+.section-spacing {
+  padding: 100px 0;
+}
+
 /* Base Style CSS End */
 
 /* Header Part CSS Start */
@@ -149,6 +154,8 @@ p a {
   top: 0;
   left: 0;
   right: 0;
+  background: var(--white);
+  padding: 10px 0;
   z-index: 999;
   -webkit-animation: sticky 1.2s;
   animation: sticky 1.2s;
@@ -490,3 +497,54 @@ p a {
 /* Hero Section CSS End */
 
 /* Header Part CSS End */
+
+/* Main Part CSS Start */
+
+/* Experts Section CSS Start */
+
+.experts-title {
+  max-width: 700px;
+  margin: auto;
+}
+
+.experts-container {
+  max-width: 850px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.experts-content p a {
+  font-weight: 500;
+}
+
+/* Experts Section CSS End */
+
+/* Preferred Section CSS Start */
+
+.preferred-wrapper {
+  background: #f8f8f8;
+}
+
+.preferred-top {
+  max-width: 720px;
+  margin: auto;
+}
+
+.preferred-top p {
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.preferred-brands {
+  max-width: 870px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 52px;
+  padding: 50px 0 60px;
+}
+
+/* Preferred Section CSS End */
+
+/* Main Part CSS End */

@@ -435,6 +435,7 @@ p a {
   font-weight: 400;
   color: #7b7b7b;
   text-decoration: underline;
+  opacity: 1;
 }
 
 .mobile-privacy-menu ul li {
@@ -923,7 +924,7 @@ p a {
 .accordion-container {
   position: relative;
   background: var(--white);
-  padding: 28px;
+  padding: 0 30px 30px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -936,11 +937,16 @@ p a {
   width: 100%;
   height: 5px;
   background: var(--primary);
+  z-index: 10;
 }
 
 .accordion-item {
-  padding: 20px 0;
+  padding: 25px 0;
   border: 1px solid #979797;
+}
+
+.accordion-item:last-child {
+  margin-bottom: 20px;
 }
 
 .accordion-button {
@@ -972,3 +978,47 @@ p a {
 }
 
 /* FAQ Section CSS End */
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-pagination-fraction {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--secondary);
+  bottom: -5px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--secondary);
+  top: initial;
+  bottom: -14px;
+  z-index: 11;
+}
+
+.swiper-button-prev {
+  left: 15px;
+}
+
+.swiper-button-next {
+  right: 15px;
+}
+
+.swiper-button-prev i,
+.swiper-button-next i {
+  font-size: 20px;
+  color: var(--secondary);
+}
+
+.swiper-button-prev i {
+  margin-right: 7px;
+}
+
+.swiper-button-next i {
+  margin-left: 7px;
+}

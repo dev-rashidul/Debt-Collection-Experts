@@ -1,19 +1,197 @@
 /* Min Width 1201px and Max Width 1399400*/
 
 @media (min-width: 1201px) and (max-width: 1400px) {
+  .hero-wrapper {
+    padding-top: 20px;
+  }
 }
 
 /* Min Width 993px and Max Width 1199200*/
 
 @media (min-width: 993px) and (max-width: 1200px) {
+  .hero-wrapper {
+    padding-top: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 56px;
+  }
+
+  .guarantee-content h2,
+  .faq-content h2 {
+    font-size: 40px;
+  }
 }
 
 /* Min Width 769px and Max Width 992px */
 
 @media (min-width: 769px) and (max-width: 992px) {
+  .section-title h2 {
+    font-size: 35px;
+  }
+
+  .hero-wrapper {
+    padding-top: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .experts-content {
+    padding-top: 50px;
+  }
+
+  .guarantee-content,
+  .faq-content {
+    max-width: 100%;
+  }
+
+  .guarantee-content {
+    padding-top: 40px;
+  }
+
+  .guarantee-img {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .specialise-card img {
+    max-height: 100%;
+  }
+
+  .guarantee-content h2,
+  .faq-content h2 {
+    font-size: 36px;
+  }
+
+  .accordion-container {
+    margin-top: 40px;
+  }
+
+  .footer-wrapper.section-spacing {
+    padding: 50px 0 100px;
+  }
+
+  .footer-menu {
+    padding-top: 50px;
+  }
 }
 
 /* Min Width 300px and Max Width 768px */
 
 @media (min-width: 300px) and (max-width: 768px) {
+  .section-spacing {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .section-title h2 {
+    font-size: 35px;
+  }
+
+  .primary-btn a {
+    border-radius: 0;
+  }
+
+  .hero-wrapper .container {
+    padding: 0;
+  }
+
+  .hero-container,
+  .hero-container::before {
+    border-radius: 0 !important;
+  }
+
+  .hero-content h6 {
+    font-size: 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 44px;
+  }
+
+  .experts-content {
+    padding-top: 50px;
+  }
+
+  .experts-btn a {
+    width: 100%;
+  }
+
+  .preferred-brands {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card {
+    padding-top: 40px;
+  }
+
+  .guarantee-content,
+  .faq-content {
+    max-width: 100%;
+  }
+
+  .guarantee-img {
+    text-align: center;
+  }
+
+  .guarantee-content {
+    padding-top: 40px;
+  }
+
+  .guarantee-buttons a {
+    width: 150px;
+  }
+
+  .review-card,
+  .work-card {
+    margin-top: 30px;
+  }
+
+  .specialise-card img {
+    max-height: 100%;
+  }
+
+  .faq-content {
+    text-align: center;
+  }
+
+  .guarantee-content h2,
+  .faq-content h2 {
+    font-size: 35px;
+  }
+
+  .accordion-container {
+    margin-top: 40px;
+  }
+
+  .footer-wrapper.section-spacing {
+    padding: 10px 0 60px;
+  }
+
+  .footer-menu {
+    padding-top: 40px;
+  }
+
+  .footer-social ul li {
+    padding-left: 0;
+    padding-right: 28px;
+  }
+
+  .footer-social ul li a i {
+    color: #7b7b7b;
+  }
+
+  .footer-copyright {
+    padding-top: 20px;
+  }
+
+  .footer-copyright p,
+  .footer-copyright p a {
+    color: #7b7b7b !important;
+  }
 }

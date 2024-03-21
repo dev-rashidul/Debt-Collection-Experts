@@ -97,8 +97,18 @@
     border-radius: 0;
   }
 
+  #Mobile-menu {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
   .hero-wrapper .container {
     padding: 0;
+  }
+
+  .hero-container {
+    background: url(../images/hero-bg-mobile.webp);
+    background-size: cover;
+    padding: 80px 0;
   }
 
   .hero-container,
@@ -144,7 +154,7 @@
   }
 
   .guarantee-buttons a {
-    width: 150px;
+    width: 140px;
   }
 
   .review-card,

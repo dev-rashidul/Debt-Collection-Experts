@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: "Gilroy";
-  src: url(../fonts/Gilroy-Regular.ttf);
+  src: url(../fonts//Gilroy-Regular.ttf);
   font-weight: 400;
 }
 
@@ -113,8 +113,12 @@ p {
 p a {
   font-weight: 700;
   text-decoration: underline;
-  color: #ff0000;
-  opacity: 0.7;
+  color: var(--primary);
+  transition: all 0.3s ease-in-out;
+}
+
+p a:hover {
+  color: var(--secondary);
 }
 
 .primary-btn a {
@@ -140,6 +144,10 @@ p a {
   padding: 100px 0;
 }
 
+.container {
+  padding: 0 20px;
+}
+
 /* Base Style CSS End */
 
 /* Header Part CSS Start */
@@ -156,6 +164,7 @@ p a {
   left: 0;
   right: 0;
   background: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   padding: 10px 0;
   z-index: 999;
   -webkit-animation: sticky 1.2s;
@@ -173,40 +182,48 @@ p a {
 
 .main-menu ul li {
   padding: 20px 0;
-  padding-right: 60px;
+  padding-right: 20px;
   position: relative;
+}
+
+.main-menu ul li:last-child {
+  padding-right: 0;
 }
 
 .main-menu ul li a {
   font-size: 18px;
   font-weight: 700;
   color: var(--secondary);
+  padding: 14px 20px;
   transition: all 0.3s ease-in-out;
 }
 
 .main-menu ul li a:hover {
-  color: #f7570e;
-  text-decoration: underline;
+  color: var(--white);
+  background: var(--primary);
+  box-shadow: 0px 3px 4px 1px rgb(0 0 0 / 60%);
 }
 
-.main-menu ul li a.active {
+/* .main-menu ul li a.active {
   color: var(--primary);
   padding-bottom: 4px;
   border-bottom: 5px solid var(--primary);
-}
+} */
 
 .main-menu ul li a:focus,
 .main-menu ul li a:active {
-  color: var(--primary);
-  text-decoration: underline;
+  color: var(--white);
+  background: var(--primary);
 }
 
 .dropdown {
   position: absolute;
-  top: 65px;
-  left: 0;
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 300px;
   background: #f9f9f9;
+  box-shadow: 0px 3px 4px 1px rgb(0 0 0 / 60%);
   display: none;
   z-index: 999;
 }
@@ -300,7 +317,7 @@ p a {
 
 .mobile-call a span {
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--secondary);
 }
 
@@ -612,6 +629,11 @@ p a {
   text-decoration-line: underline;
   color: var(--primary);
   padding-left: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.learn-more-btn a:hover {
+  color: var(--secondary);
 }
 
 .learn-more-btn a i {

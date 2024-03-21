@@ -94,6 +94,7 @@
   }
 
   .primary-btn a {
+    width: 150px;
     border-radius: 0;
   }
 
@@ -108,7 +109,7 @@
   .hero-container {
     background: url(../images/hero-bg-mobile.webp);
     background-size: cover;
-    padding: 80px 0;
+    padding: 80px 20px;
   }
 
   .hero-container,

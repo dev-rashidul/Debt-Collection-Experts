@@ -201,7 +201,6 @@ p a:hover {
 .main-menu ul li a:hover {
   color: var(--white);
   background: var(--primary);
-  box-shadow: 0px 3px 4px 1px rgb(0 0 0 / 60%);
 }
 
 /* .main-menu ul li a.active {
@@ -218,7 +217,7 @@ p a:hover {
 
 .dropdown {
   position: absolute;
-  top: 58px;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
   width: 300px;
@@ -429,6 +428,11 @@ p a:hover {
 .mobile-menu-bottom ul li a {
   font-size: 20px;
   color: #a1aeb7;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu-bottom ul li a:hover {
+  color: var(--primary) !important;
 }
 
 .mobile-menu-bottom ul li {
@@ -453,6 +457,11 @@ p a:hover {
   color: #7b7b7b;
   text-decoration: underline;
   opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu-bottom p a:hover {
+  color: var(--primary) !important;
 }
 
 .mobile-privacy-menu ul li {
@@ -584,6 +593,7 @@ p a:hover {
 
 .service-card {
   margin-top: 60px;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -600,7 +610,7 @@ p a:hover {
 }
 
 .service-card-content {
-  padding: 20px 5px 5px;
+  padding: 20px 10px 0;
 }
 
 .service-card-content h5 {
@@ -628,7 +638,8 @@ p a:hover {
   letter-spacing: -0.6px;
   text-decoration-line: underline;
   color: var(--primary);
-  padding-left: 5px;
+  padding-left: 10px;
+  padding-bottom: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -821,6 +832,7 @@ p a:hover {
 
 .work-card {
   margin-top: 40px;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -853,7 +865,7 @@ p a:hover {
 }
 
 .work-card-content {
-  padding: 30px 5px 5px;
+  padding: 30px 10px 10px;
 }
 
 .work-card-content h5 {
@@ -874,63 +886,6 @@ p a:hover {
 }
 
 /* Work Section CSS End */
-
-/* Main Part CSS End */
-
-/* Footer Part CSS Start */
-
-.footer-menu h6 {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 173%;
-  letter-spacing: -0.1px;
-  color: var(--secondary);
-  opacity: 0.7;
-  margin-bottom: 0;
-}
-
-.footer-nav {
-  padding-top: 10px;
-}
-
-.footer-nav ul li {
-  padding: 7px 0;
-}
-
-.footer-nav ul li a {
-  font-size: 17px;
-  font-weight: 400;
-  letter-spacing: -0.2px;
-  text-decoration: underline;
-  color: #181f32;
-}
-
-.footer-wrapper hr {
-  margin: 30px 0;
-  border-top: 1px solid #e7e9ed;
-  opacity: 1;
-}
-
-.footer-copyright p,
-.footer-copyright p a {
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: -0.1px;
-  color: var(--secondary) !important;
-  margin-bottom: 0;
-  opacity: 1;
-}
-
-.footer-social ul li {
-  padding-left: 28px;
-}
-
-.footer-social ul li a i {
-  font-size: 20px;
-  color: var(--black);
-}
-
-/* Footer Part CSS End */
 
 /* FAQ Section CSS Start */
 
@@ -964,7 +919,7 @@ p a:hover {
 .accordion-container {
   position: relative;
   background: var(--white);
-  padding: 0 30px 30px;
+  padding: 10px 30px 30px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -981,7 +936,6 @@ p a:hover {
 }
 
 .accordion-item {
-  padding: 25px 0;
   border: 1px solid #979797;
 }
 
@@ -994,15 +948,32 @@ p a:hover {
   font-weight: 700;
   letter-spacing: -0.5px;
   color: var(--secondary);
-  padding: 0;
+  padding: 25px 0;
 }
 
-.accordion-button:focus {
-  background: none;
-  box-shadow: none;
+.accordion-button::after {
+  background-image: url(../images/chevron-down-icon.svg);
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--white);
+  background: var(--primary) !important;
+  padding: 25px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/chevron-up-icon.svg);
+  transform: initial;
 }
 
 .accordion-body {
+  padding-top: 0;
   padding-left: 0;
   padding-bottom: 0;
 }
@@ -1014,10 +985,9 @@ p a:hover {
   letter-spacing: -0.2px;
   color: var(--secondary);
   opacity: 0.7;
+  padding: 10px 0;
   margin-bottom: 0;
 }
-
-/* FAQ Section CSS End */
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -1039,6 +1009,14 @@ p a:hover {
   top: initial;
   bottom: -14px;
   z-index: 11;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover,
+.swiper-button-prev:hover i,
+.swiper-button-next:hover i {
+  color: var(--primary);
 }
 
 .swiper-button-prev {
@@ -1053,6 +1031,7 @@ p a:hover {
 .swiper-button-next i {
   font-size: 20px;
   color: var(--secondary);
+  transition: all 0.3s ease-in-out;
 }
 
 .swiper-button-prev i {
@@ -1062,3 +1041,78 @@ p a:hover {
 .swiper-button-next i {
   margin-left: 7px;
 }
+
+/* FAQ Section CSS End */
+
+/* Main Part CSS End */
+
+/* Footer Part CSS Start */
+
+.footer-menu h6 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 173%;
+  letter-spacing: -0.1px;
+  color: var(--secondary);
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+
+.footer-nav {
+  padding-top: 10px;
+}
+
+.footer-nav ul li {
+  padding: 7px 0;
+}
+
+.footer-nav ul li a {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  text-decoration: underline;
+  color: #181f32;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-nav ul li a:hover {
+  color: var(--primary);
+}
+
+.footer-wrapper hr {
+  margin: 30px 0;
+  border-top: 1px solid #e7e9ed;
+  opacity: 1;
+}
+
+.footer-copyright p,
+.footer-copyright p a {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  color: var(--secondary) !important;
+  margin-bottom: 0;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-copyright p a:hover {
+  color: var(--primary) !important;
+}
+
+.footer-social ul li {
+  padding-left: 28px;
+}
+
+.footer-social ul li a i {
+  font-size: 20px;
+  color: var(--black);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-social ul li a i:hover,
+.footer-social ul li a i:active {
+  color: var(--primary) !important;
+}
+
+/* Footer Part CSS End */

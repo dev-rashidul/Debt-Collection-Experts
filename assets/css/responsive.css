@@ -205,4 +205,10 @@
   .footer-copyright p a {
     color: #7b7b7b !important;
   }
+
+  /* About Page Responsive CSS */
+
+  .client-needs-card {
+    padding-left: 20px;
+  }
 }

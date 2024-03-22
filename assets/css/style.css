@@ -71,8 +71,6 @@ body {
   --secondary: #161c2d;
   --white: #ffffff;
   --black: #000000;
-  --gray-400: #5b5e69;
-  --gray-500: #4d4d4d;
 }
 
 ol,
@@ -107,7 +105,8 @@ p {
   font-weight: 500;
   line-height: 168%;
   letter-spacing: -0.2px;
-  color: var(--gray-500);
+  color: var(--black);
+  opacity: 0.7;
 }
 
 p a {
@@ -480,9 +479,6 @@ p a:hover {
 /* Hero Section CSS Start */
 
 .hero-container {
-  background: url(../images/home-hero-bg.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 113px 0;
   border-radius: 10px;
 }
@@ -497,6 +493,12 @@ p a:hover {
   background: #0a0d17;
   border-radius: 10px;
   z-index: -1;
+}
+
+.home-hero-container {
+  background: url(../images/home-hero-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -1117,3 +1119,115 @@ p a:hover {
 }
 
 /* Footer Part CSS End */
+
+/* ============***===========
+About Us Page CSS
+============***=========== */
+
+/* About Us Hero Section CSS Start */
+
+.about-hero-container {
+  background: url(../images/about-us-hero-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* About Us Hero Section CSS End */
+
+.about-experts-title {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-preferred-wrapper,
+.about-review-wrapper {
+  background: var(--white);
+}
+
+.about-specialise-wrapper {
+  background: #f8f8f8;
+}
+
+/* Your Needs Section CSS Start */
+
+.your-needs-wrapper {
+  background: #f8f8f8;
+}
+
+.your-needs-top {
+  max-width: 720px;
+  margin: auto;
+  text-align: center;
+}
+
+.your-needs-top h2 {
+  max-width: 540px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.your-needs-card {
+  height: 100%;
+  padding: 30px;
+  background: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #e7e9ed;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.your-needs-card:hover {
+  box-shadow: 0px 4px 3px 0px #979797;
+}
+
+.your-needs-card h6 {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.your-needs-card p {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 168%;
+  color: var(--secondary);
+  margin-bottom: 0;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+/* Your Needs Section CSS End */
+
+/* Client Needs Section CSS Start */
+
+.client-needs-top h2 {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+}
+
+.client-needs-top p {
+  max-width: 750px;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.client-needs-card-container {
+  max-width: 690px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.client-needs-card ol li {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--secondary);
+  list-style: initial;
+  padding: 3px 0;
+}
+
+/* Client Needs Section CSS End */

@@ -211,4 +211,15 @@
   .client-needs-card {
     padding-left: 20px;
   }
+
+  /* Conatct Us Page Responsive CSS */
+
+  .contact-bottom-container {
+    padding: 60px 20px;
+  }
+
+  .contact-bottom-card p,
+  .contact-bottom-card ol li {
+    text-align: left;
+  }
 }

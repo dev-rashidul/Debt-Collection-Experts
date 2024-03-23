@@ -317,6 +317,11 @@ p a:hover {
   font-size: 25px;
   font-weight: 500;
   color: var(--secondary);
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-call a span:hover {
+  color: var(--primary);
 }
 
 .mobile-nav {
@@ -1509,6 +1514,10 @@ Contact Us Page CSS
   list-style: initial;
 }
 
+.radio input {
+  width: initial;
+}
+
 /* Contact Form Section CSS End */
 
 /* =======***======
@@ -1529,3 +1538,7 @@ Error Page CSS
 }
 
 /* Error Section CSS End */
+
+embed {
+  height: 100vh;
+}

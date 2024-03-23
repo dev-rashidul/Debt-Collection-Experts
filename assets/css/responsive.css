@@ -95,7 +95,7 @@
 
   .primary-btn a {
     width: 150px;
-    border-radius: 0;
+    border-radius: 8px;
   }
 
   #Mobile-menu {
@@ -107,6 +107,10 @@
   }
 
   .hero-container {
+    background-position: center;
+  }
+
+  .home-hero-container {
     background: url(../images/hero-bg-mobile.webp);
     background-size: cover;
     padding: 80px 20px;
